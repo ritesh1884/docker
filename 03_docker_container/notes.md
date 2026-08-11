@@ -147,3 +147,16 @@ Container Runtime
 | **Kernel Sharing** | Containers share the host OS kernel (unlike VMs) |
 | **Speed** | Starts in seconds — no full OS boot required |
 
+
+
+##  Difference
+
+| Feature                | Docker Image                         | Docker Container                           |
+| ---------------------- | ------------------------------------ | ------------------------------------------ |
+| **What is it?**        | A **blueprint/template**             | A **running instance** of an image         |
+| **State**              | Read-only/immutable layers           | Has a writable layer on top                |
+| **Purpose**            | Used to create containers            | Runs the actual application                |
+| **Created from**       | Dockerfile                           | Docker Image                               |
+| **Can run?**           |  No                                 |  Yes                                      |
+| **Can have multiple?** | One image can create many containers | Each container is an individual instance   |
+| **Example**            | `python:3.12` image                  | Your Python app running from `python:3.12` |

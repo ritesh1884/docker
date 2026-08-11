@@ -51,6 +51,14 @@ docker stop container_name
 docker run -d redis
 ```
 
+---
+
+##  `docker run -d` — detached mode with custom name
+
+```bash
+docker run -d --name my-container redis
+```
+
 The `-d` flag = **detached mode**. This changes *where the logs go*, not what the container does.
 
 | Mode | Terminal behavior | Where logs go |
@@ -71,4 +79,9 @@ The `-d` flag = **detached mode**. This changes *where the logs go*, not what th
 | `docker rm -f container_name` | Force stop + delete in one go | Gone  |
 | `docker logs container_name` | View captured logs of a (detached) container | No change |
 | `docker start container_name` | Restart a previously stopped container | Running  |
-
+| `docker ps` | list all running containers only|   |
+| `docker ps -a` | list all running as well as stopped containers |   |
+| `docker restart contianer_name` | to restart without stopping  |   |
+| `docker logs container_name` | to see logs of any container |   |
+| `docker logs container_name > myLog.log` | to move logs to a file  |   |
+| `docker logs -f container_name ` | to see live logs  |   |
