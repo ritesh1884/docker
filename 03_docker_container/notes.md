@@ -160,3 +160,7 @@ Container Runtime
 | **Can run?**           |  No                                 |  Yes                                      |
 | **Can have multiple?** | One image can create many containers | Each container is an individual instance   |
 | **Example**            | `python:3.12` image                  | Your Python app running from `python:3.12` |
+
+
+Images are present under container and container runs it. 
+

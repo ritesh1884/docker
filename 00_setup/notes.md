@@ -85,3 +85,10 @@ The `-d` flag = **detached mode**. This changes *where the logs go*, not what th
 | `docker logs container_name` | to see logs of any container |   |
 | `docker logs container_name > myLog.log` | to move logs to a file  |   |
 | `docker logs -f container_name ` | to see live logs  |   |
+
+
+## All the commands of docker
+```bash 
+docker --help
+docker container --help
+```  
