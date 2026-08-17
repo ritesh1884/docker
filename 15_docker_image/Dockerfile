@@ -24,4 +24,7 @@ RUN npm install
 
 COPY . .
 
+# u can also provide range: 3000-3005
+EXPOSE 8000 3000 3001   
+
 CMD ["npm", "start"]

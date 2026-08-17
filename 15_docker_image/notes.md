@@ -69,4 +69,26 @@ COPY . .
 CMD ["npm", "start"]
 idhar se execute hoga. 
 
+we can map multiple port: docker run -it -p 3000:8000 -p 3001:8000 -p 3002:8000 my_image 
+
+If we want to map multiple port. For this first write EXPOSE 8000 in dockerfile then then rebuild the image as we made changes then run it: docker run -it -P my_image
+-P means it will automatic map the ports
+
+To see all the mapped ports: docker ps -a
+
+
+
+Pushing the image to hub.docker.com 
+1.  docker build -t ritesh20047/demo . 
+ ritesh20047/demo = name of the docker hub repo
+
+2.  docker login
+
+3. docker push ritesh20047/demo:latest
+
+
+To pull it.
+first delete the image: docker image rm ritesh20047/demo:latest
+then puyll it: docker pull ritesh20047/demo:latest 
+Now check: docker images 
 ```
