@@ -90,5 +90,5 @@ Pushing the image to hub.docker.com
 To pull it.
 first delete the image: docker image rm ritesh20047/demo:latest
 then puyll it: docker pull ritesh20047/demo:latest 
-Now check: docker images 
+Now check the pulled image: docker images 
 ```
